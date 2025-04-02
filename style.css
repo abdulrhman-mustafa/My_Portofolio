@@ -359,11 +359,6 @@
       z-index: 10;
     }
   }
-  .max-md\:mx-5 {
-    @media (width < 48rem) {
-      margin-inline: calc(var(--spacing) * 5);
-    }
-  }
   .max-md\:mx-auto {
     @media (width < 48rem) {
       margin-inline: auto;
