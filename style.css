@@ -237,8 +237,8 @@
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
-  .grid-cols-\[repeat\(auto-fill\,minmax\(300px\,1fr\)\)\] {
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  .grid-cols-\[repeat\(auto-fill\,minmax\(350px\,1fr\)\)\] {
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
   }
   .items-center {
     align-items: center;
@@ -671,6 +671,8 @@ body {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 .services .box:hover {
   transform: translateY(-15px);
@@ -678,6 +680,7 @@ body {
   -moz-transform: translateY(-15px);
   -ms-transform: translateY(-15px);
   -o-transform: translateY(-15px);
+  border-color: var(--main-color);
 }
 .services .box i {
   font-size: 40px;
