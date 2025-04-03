@@ -1,9 +1,12 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./style.css" rel="stylesheet">
+    <title>Abdulrhman Mustafa - Portfolio</title>
+    <meta name="description" content="Portfolio of Abdulrhman Mustafa showcasing projects, skills, and experience in web development.">
+    <meta name="keywords" content="Abdulrhman Mustafa, portfolio, web developer, projects">
     <title>Portofolio</title>
     <!-- Icon Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,18 +26,18 @@
                 </div>
             <nav class="navbar hidden max-md:opacity-0 max-md:mx-auto max-md:my-0 max-md:z-10 max-md:absolute max-md:left-0 max-md:top-20 max-md:w-full max-md:block lg:flex">
                 <ul class="lg:flex max-md:block">
-                    <li><a class="nav-link font-semibold active lg:mx-5" href="#">Home</a></li>
-                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#">Services</a></li>
-                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#">About me</a></li>
-                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#">Portfolio</a></li>
-                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#">Contact me</a></li>
+                    <li><a class="nav-link font-semibold active lg:mx-5" href="#home">Home</a></li>
+                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#services">Services</a></li>
+                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#about">About me</a></li>
+                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link font-semibold transition duration-300 lg:mx-5" href="#contact">Contact me</a></li>
                 </ul>
             </nav>
-                <a id="btn" href="#" class="btn max-md:hidden lg:block">Hire Me</a>
+                <a id="btn" href="https://api.whatsapp.com/message/GN7MZH4BC67IB1?autoload=1&app_absent=0" target="_blank" class="btn max-md:hidden lg:block">Hire Me</a>
         </div>
     </header>
     <!-- End Header -->
-    <section class="home bg-main w-full h-100vh">
+    <section class="home bg-main h-100vh">
         <div class="container text-amber-50 max-md:flex-col max-md:text-center flex justify-between items-center max-sm:px-5 max-md:py-16 lg:py-30 lg:px-24 mx-auto">
             <div class="content lg:w-1/2">
                 <p class="p">Hi I am <br><span>Abdulrahman Mustafa</span></p>
@@ -68,6 +71,50 @@
             </div>
         </div>
     </section>
+    <section id="services" class="services bg-main h-100vh">
+        <h2 class="lg:text-5xl max-md:text-2xl font-bold text-main text-center text-white">Services</h2>
+        <p class="text-center my-5">Building responsive, interactive web solutions with modern technology.</p>
+        <div class="container text-amber-50 max-md:py-7 lg:py-20 max-md:px-5 lg:px-24 mx-auto">
+            <div class="box-holder grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
+                <div class="box p-8 text-center">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Advanced UI Development</h3>
+                    <p>Building modern, responsive, and dynamic web interfaces with optimized performance.</p>
+                </div>
+                <div class="box p-8 text-center">
+                    <i class="fab fa-react"></i>
+                    <h3>React.js Development</h3>
+                    <p>Building dynamic, high-performance, and scalable web applications using React.js.</p>
+                </div>
+                <div class="box p-8 text-center">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>API Integration & Dynamic Data</h3>
+                    <p>Connecting front-end with back-end to fetch and display real-time data.</p>
+                </div>
+                <div class="box p-8 text-center">
+                    <i class="fa-solid fa-lock"></i>
+                    <h3>Authentication & Security</h3>
+                    <p>Implementing secure login, authorization, and protection against web vulnerabilities.</p>
+                </div>
+                <div class="box p-8 text-center">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Performance Optimization</h3>
+                    <p>Improving website speed, reducing load time, and optimizing resource usage.</p>
+                </div>
+                <div class="box p-8 text-center">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Dashboards & Admin Panels</h3>
+                    <p>Designing interactive, data-driven admin panels with real-time insights and analytics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 
     <script src="./js/main.js"></script>
 </body>
