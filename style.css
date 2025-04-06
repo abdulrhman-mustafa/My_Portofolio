@@ -764,11 +764,11 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.exper p {
+.exper h3 {
   color: var(--main-color);
   font-weight: bold;
 }
-.exper p span {
+.exper h3 span {
   color: #fff;
   margin-top: 5px;
 }
