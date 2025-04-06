@@ -341,6 +341,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
