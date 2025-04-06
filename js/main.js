@@ -27,3 +27,39 @@ humburger.addEventListener("click", () => {
 
 
 // Progress Bar ==>
+
+    $(document).ready(function() {
+        // Define the options for CircleProgress
+        let options = {
+            startAngle: -1.55,
+            size: 150,
+            fill: { gradient: ["#fd8529", "#ec4209"] },
+            lineCap: "round",
+            emptyFill: "rgba(255, 255, 255, .15)"
+        };
+    
+        // Function to initialize the progress circle with a dynamic value
+        function initializeProgressCircle(element, value) {
+            $(element).circleProgress({
+                value: value,
+                ...options
+            });
+        }
+    
+        // Function to handle intersection observer callback
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const value = $(element).data("value"); // Get value from data attribute
+                    initializeProgressCircle($(element).find('.bar'), value);
+                    observer.unobserve(element); // Stop observing once it's visible
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of element is in viewport
+    
+        // Set up intersection observer for each skill circle
+        $('.circle').each(function() {
+            observer.observe(this);
+        });
+    });

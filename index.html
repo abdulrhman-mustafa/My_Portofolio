@@ -13,6 +13,8 @@
     <!-- cdn loader -->
     <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/tailChase.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.min.js"></script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +31,7 @@
         ></l-tail-chase>
     </div>
     <!-- End Loader -->
-    
+    <!-- Start Page -->
     <div id="page">
         <!-- Start Header -->
     <header class="header bg-main z-20">
@@ -148,13 +150,73 @@
     </section>
     <!-- End About -->
     <!-- Start Progress -->
-    <section class="progress bg-main h-100vh">
-        <div class="container flex items-center justify-between  max-md:py-7 lg:py-26 max-md:px-5 lg:px-24 mx-auto">
-            
+    <section id="progress" class="progress py-10 bg-main h-100vh">
+        <div class="container flex flex-wrap gap-6 justify-between max-md:py-7 lg:py-26 max-md:px-5 lg:px-24 mx-auto text-white">
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.90">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">90%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">HTML & CSS</div>
+            </div>
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.85">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">85%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">Javascript</div>
+            </div>
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.80">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">80%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">React Js</div>
+            </div>
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.90">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">90%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">TailwindCSS</div>
+            </div>
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.85">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">85%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">Git & Github</div>
+            </div>
+            <!-- Card -->
+            <div class="flex flex-col items-center">
+                <div class="circle relative w-[150px] h-[150px] rounded-[50%]" data-value="0.75">
+                    <div class="bar"></div>
+                    <div class="box absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
+                        <span class="text-3xl font-bold text-[color:var(--main-color)]">75%</span>
+                    </div>
+                </div>
+                <div class="text text-xl font-semibold mt-7">Testing</div>
+            </div>
         </div>
     </section>
     <!-- End Progress -->
     </div>
+    <!-- End Page -->
 
 
 
