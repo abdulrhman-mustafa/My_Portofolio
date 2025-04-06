@@ -608,16 +608,6 @@ body {
   font-family: "Nunito", sans-serif;
   position: relative;
 }
-.cursor {
-  -moz-backdrop-filter: blur(4px);
-  -webkit-filter: blur(4px);
-  display: none;
-}
-@media (min-width: 767px) {
-  .cursor {
-    display: block;
-  }
-}
 #page {
   display: none;
 }

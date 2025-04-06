@@ -1,12 +1,3 @@
-// Cursor ==>
-
-const cursor = document.getElementById("cursor-effect");
-
-document.addEventListener("mousemove", (e) => {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-});
-
-
 // loader
 setTimeout(function () {
     document.getElementById("loader").style.display = "none";
