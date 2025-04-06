@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="scroll-smooth" lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,31 @@
     <title>Portofolio</title>
     <!-- Icon Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdn loader -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/tailChase.js"></script>
+
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Start Header -->
+    <!-- Cursor -->
+    <div id="cursor-effect"></div>
+    <!-- End Cursor -->
+    <!-- Loader -->
+    <div id="loader">
+        <l-tail-chase
+            size="50"
+            speed="1.75"
+            color="#FD6F00" 
+        ></l-tail-chase>
+    </div>
+    <!-- End Loader -->
+    
+    <div id="page">
+        <!-- Start Header -->
     <header class="header bg-main z-20">
         <div class="container flex max-md:justify-between justify-between items-center max-sm:px-5 py-5 lg:px-24 mx-auto relative">
             <a href="#" class="logo text-gradient text-2xl font-bold">Aboda</a>
@@ -128,9 +146,22 @@
                 </p>
                 <a href="#" class="btn"><i class="fa-solid fa-download mx-2"></i>Download CV</a>
             </div>
+
         </div>
     </section>
     <!-- End About -->
+    <!-- Start Progress -->
+    <section class="progress bg-main h-100vh">
+        <div class="container flex items-center justify-between  max-md:py-7 lg:py-26 max-md:px-5 lg:px-24 mx-auto">
+            
+        </div>
+    </section>
+    <!-- End Progress -->
+    </div>
+
+
+
+
     <script src="./js/main.js"></script>
 </body>
 </html>
