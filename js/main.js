@@ -4,7 +4,6 @@ setTimeout(function () {
     document.getElementById("page").style.display = "block";
 }, 500);
 
-
 // Task One:
 // Humburger Menu ==>
 
@@ -18,13 +17,6 @@ humburger.addEventListener("click", () => {
     bars.classList.toggle("active");
     xmark.classList.toggle("active");
 });
-
-
-
-
-
-
-
 
 // Progress Bar ==>
 
