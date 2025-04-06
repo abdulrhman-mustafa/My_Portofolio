@@ -764,11 +764,11 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.exper h3 {
+.exper h2 {
   color: #FD8F3A;
   font-weight: bold;
 }
-.exper h3 span {
+.exper h2 span {
   color: #fff;
   margin-top: 5px;
 }
@@ -802,7 +802,7 @@ body {
   font-size: 40px;
   color: var(--main-color);
 }
-.services .box h3 {
+.services .box h2 {
   color: var(--main-color);
   margin: 15px 0;
   font-weight: 600;
