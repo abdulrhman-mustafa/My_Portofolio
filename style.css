@@ -253,6 +253,9 @@
   .my-5 {
     margin-block: calc(var(--spacing) * 5);
   }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
   }
@@ -267,6 +270,12 @@
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-7 {
+    margin-bottom: calc(var(--spacing) * 7);
   }
   .block {
     display: block;
